@@ -1,0 +1,46 @@
+{
+  "name": "react-mdl-selectfield",
+  "version": "1.0.0",
+  "description": "A simple Selectfield for react-mdl, using https://github.com/mebibou/mdl-selectfield",
+  "main": "lib/SelectField.js",
+  "dependencies": {
+    "mdl-selectfield": "^1.0.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "react-mdl": "^1.9.0",
+    "rimraf": "^2.6.1"
+  },
+  "peerDependencies": {
+    "react-mdl": "^1.9.0"
+  },
+  "scripts": {
+    "clean": "rimraf lib",
+    "copy-selectfield-dist": "cp ./node_modules/mdl-selectfield/dist/* ./lib",
+    "copy-selectfield-sass": "cp ./node_modules/mdl-selectfield/src/selectfield/selectfield.scss ./lib",
+    "copy-selectfield-stuff": "npm run copy-selectfield-dist && npm run copy-selectfield-sass",
+    "build-js": "babel src  --out-dir ./lib",
+    "build": "npm run clean && npm run build-js && npm run copy-selectfield-stuff",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saboya/react-mdl-selectfield.git"
+  },
+  "keywords": [
+    "react",
+    "material-design-lite",
+    "react-mdl",
+    "select",
+    "selectfield"
+  ],
+  "author": "Rodrigo Saboya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saboya/react-mdl-selectfield/issues"
+  },
+  "homepage": "https://github.com/saboya/react-mdl-selectfield#readme"
+}
