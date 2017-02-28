@@ -4,7 +4,7 @@ import classNames from 'classnames'
 import mdlUpgrade from 'react-mdl/lib/utils/mdlUpgrade'
 
 const propTypes = {
-  children: PropTypes.element,
+  children: PropTypes.arrayOf(PropTypes.element),
   className: PropTypes.string,
   disabled: PropTypes.bool,
   error: PropTypes.node,
