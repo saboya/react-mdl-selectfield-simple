@@ -23,7 +23,7 @@ const stripDirs = (files) => {
 const renameJsx = (files) => {
   return new Promise(resolve => resolve(
     files.map(file => {
-      file.path = file.path.replace(/\.jsx$/,'.js')
+      file.path = file.path.replace(/\.jsx$/, '.js')
       return file
     })
   ))
