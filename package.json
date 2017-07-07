@@ -3,9 +3,6 @@
   "version": "1.0.2",
   "description": "A simple Selectfield for react-mdl, using https://github.com/mebibou/mdl-selectfield",
   "main": "lib/SelectField.js",
-  "dependencies": {
-    "mdl-selectfield": "^1.0.4"
-  },
   "devDependencies": {
     "babel-core": "^6.23.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
@@ -16,6 +13,7 @@
     "eslint-plugin-promise": "^3.4.2",
     "eslint-plugin-react": "^6.10.0",
     "eslint-plugin-standard": "^2.0.1",
+    "mdl-selectfield": "^1.0.4",
     "react-mdl": "^1.9.0",
     "rimraf": "^2.6.1",
     "start": "^5.1.0",
