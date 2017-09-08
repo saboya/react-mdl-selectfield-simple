@@ -1,6 +1,6 @@
 {
   "name": "react-mdl-selectfield-simple",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A simple Selectfield for react-mdl, using https://github.com/mebibou/mdl-selectfield",
   "main": "lib/SelectField.js",
   "devDependencies": {
