@@ -41,6 +41,11 @@ class Selectfield extends React.Component {
     if (this.props.value !== prevProps.value && this.inputRef !== document.activeElement) {
       findDOMNode(this).MaterialSelectfield.change(this.props.value)
     }
+    if (this.props.error) {
+      // Every time the input gets updated by MDL (checkValidity() or change())
+      // its invalid class gets reset. We have to put it again if the input is specifically set as "invalid"
+      this.setAsInvalid()
+    }
   }
 
   setAsInvalid () {
